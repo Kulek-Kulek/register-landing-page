@@ -1,0 +1,25 @@
+.contact-form__input-div {
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+.conatct-form__input, .conatct-form__textarea {
+    width: 100%;
+    padding: 1%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.conatct-form__textarea {
+    border: 1px solid black;
+}
+
+.contact-form__input-error {
+    border: 1px solid red;
+}
+
+.contact-form__message-error {
+    color: red;
+    font-size: .8rem;
+    margin: 5px 0 0 5px;
+}

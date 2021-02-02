@@ -1,0 +1,9 @@
+.qa {
+    margin-top: 10vh;
+}
+
+@media(orientation:landscape) {
+    .qa {
+        margin-top: 15vh;
+    }
+}

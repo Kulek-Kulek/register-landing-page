@@ -1,0 +1,23 @@
+.main-featuers {
+    width: 80%;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: stretch; */
+}
+
+@media(orientation:landscape) {
+    .main-featuers {
+        width: 100%;
+        margin: 10vh auto 10vh auto;
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 1024px) {
+    .main-featuers {
+        width: 80%;
+        margin: 25vh auto 15vh auto;
+    }
+}

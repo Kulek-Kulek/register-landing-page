@@ -1,0 +1,70 @@
+.three-steps-slogans {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 5%; */
+}
+
+.three-steps-slogans__slogans-div {
+    /* width: 70%; */
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.three-steps-slogan__main-slogan {
+    font-size: 1.8rem;
+    font-family: var(--fonts);
+    color: #4E6077;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.three-steps-slogan__minor-slogan {
+    text-align: center;
+    font-family: var(--fonts);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 3% 0;
+    border-bottom: 2px solid #4E6077;
+}
+
+.three-steps-slogan__hr {
+    width: 20%;
+    margin: 5% auto 0 auto;
+}
+
+.three-steps-slogan__buttons {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    padding: 10% 0;
+}
+
+@media (orientation:landscape) {
+    .three-steps-slogans {
+        padding-left: 5%;
+    }
+    .three-steps-slogans__slogans-div {
+        width: 100%;
+    }
+    .three-steps-slogan__buttons {
+        width: 100%;
+    }
+}
+
+@media (min-width:1024px) {
+    .three-steps-slogans {
+        padding-left: 5%;
+    }
+    .three-steps-slogans__slogans-div {
+        width: 70%;
+    }
+    .three-steps-slogan__buttons {
+        align-items: center;
+        width: 70%;
+    }
+}

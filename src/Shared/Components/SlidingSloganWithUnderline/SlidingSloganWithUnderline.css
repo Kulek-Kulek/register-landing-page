@@ -1,0 +1,226 @@
+.sliding-slogan-with-underline {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    background: var(--bgc);
+    transition: .3s;
+}
+
+.sliding-slogan-with-underline-menu-active {
+    /* background: linear-gradient(45deg, var(--minor-color), var(--main-color)); */
+    transition: .5s;
+}
+
+.sliding-slogan-with-underline__heading-div {
+    flex-basis: 40%;
+}
+
+.sliding-slogan-with-underline__heading {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliding-slogan-with-underline__heading--menu-active {
+    font-size: 1.3rem;
+}
+
+.sliding-slogan-with-underline__slogan-span {
+    font-weight: 300;
+    font-family: var(--main-font);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.sliding-slogan-with-underline__minor-heading {
+    margin-top: 5%;
+    width: 90%;
+    font-weight: 200;
+    font-family: var(--main-font);
+    font-size: 1rem;
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.sliding-slogan-with-underline__sliding-span {
+    display: none;
+    font-weight: 700;
+    letter-spacing: .5px;
+    transform: translate(0);
+    padding-bottom: 10px;
+    color: var(--minor-color);
+    overflow: hidden;
+}
+
+.sliding-slogan-with-underline__sliding-span:after {
+    position: absolute;
+    bottom: 0;
+    left: -110%;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: blue;
+    animation: sliding-span-underline 5s ease-in-out;
+}
+
+.sliding-slogan-with-underline__btn-div {
+    flex-basis: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliding-slogan-with-underline__btn-div--menu-active {
+    width: 90%;
+}
+
+.sliding-slogan-with-underline__btn {
+    border: 1px solid blue;
+    background-color: #fff;
+    color: blue;
+    letter-spacing: 1px;
+    padding: 4% 5%;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.sliding-slogan-with-underline__btn--menu-active {
+    padding: 3% 2%;
+    font-size: .7rem;
+}
+
+.sliding-slogan-with-underline__btn:hover {
+    background-color: blue;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.sliding-slogan-with-underline__btn-left {
+    background-color: blue;
+    color: #fff;
+}
+
+.sliding-slogan-with-underline__btn-left:hover {
+    color: blue;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.sliding-slogan-with-underline__sliding-span--active {
+    display: block;
+}
+
+@media(orientation:landscape) {
+    /* .sliding-slogan-with-underline {
+        justify-content: center;
+    } */
+    .sliding-slogan-with-underline__minor-heading {
+        margin-top: 0;
+    }
+    .sliding-slogan-with-underline__btn-div {
+        width: 75%;
+    }
+    .sliding-slogan-with-underline__btn {
+        padding: 2.5% 5%;
+    }
+    .sliding-slogan-with-underline__btn-left {
+        background-color: blue;
+        color: #fff;
+    }
+}
+
+@media(min-width:1024px) {
+    .sliding-slogan-with-underline__heading-div {
+        flex-basis: 30%;
+    }
+    .sliding-slogan-with-underline__heading {
+        flex-direction: row;
+        align-items: flex-end;
+        position: relative;
+        overflow: hidden;
+    }
+    .sliding-slogan-with-underline__slogan-span {
+        font-size: 45px;
+        padding-bottom: 10px;
+    }
+    .sliding-slogan-with-underline__minor-heading {
+        margin-top: 2%;
+        width: 40%;
+        /* color: #fff; */
+        font-size: 1.2rem;
+        flex-basis: 20%;
+    }
+    .sliding-slogan-with-underline__sliding-span {
+        padding-bottom: 10px;
+        margin: 0 10px;
+        animation: sliding-span-down-right 20s linear 5.1s;
+    }
+    .sliding-slogan-with-underline__sliding-span-left {
+        animation: sliding-span-down-left 20s linear 5.1s;
+    }
+    .sliding-slogan-with-underline__btn-div {
+        width: 35%;
+    }
+    .sliding-slogan-with-underline__btn-div--menu-active {
+        width: 45%;
+    }
+    .sliding-slogan-with-underline__btn {
+        letter-spacing: 2px;
+        padding: 4% 7%;
+        font-size: 1.1rem;
+    }
+}
+
+@keyframes sliding-span-down-right {
+    0% {
+        transform: translate(0);
+    }
+    5% {
+        transform: translate(70px, 200px);
+    }
+    100% {
+        transform: translate(70px, 200px);
+    }
+}
+
+@keyframes sliding-span-down-left {
+    0% {
+        transform: translate(0);
+    }
+    5% {
+        transform: translate(-70px, 200px);
+    }
+    100% {
+        transform: translate(-70px, 200px);
+    }
+}
+
+@keyframes sliding-span-underline {
+    0% {
+        left: -100%;
+    }
+    5% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes sliding-span-opacity {
+    to {
+        opacity: 1;
+    }
+}

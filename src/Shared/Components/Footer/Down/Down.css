@@ -1,0 +1,103 @@
+.footer-down {
+    height: 35vh;
+    background-color: #E6E7E8;
+    background: linear-gradient(90deg, #ced0d1, #828686, #ebeeee);
+    display: flex;
+    box-shadow: 5px 5px 40px black;
+}
+
+.footer-down__cards {
+    position: relative;
+    flex-basis: 50%;
+}
+
+.footer-down__card {
+    position: absolute;
+    right: -90%;
+    top: -20%;
+    width: 185%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-down__media {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 20px black;
+}
+
+.footer-down__slogan {
+    display: none;
+}
+
+.footer-down__span {
+    color: #fff;
+    font-family: var(--fonts);
+    font-weight: 200;
+    font-size: 2rem;
+    text-shadow: 1px 1px var(--minor-color), 2px 2px black;
+}
+
+.footer-down__span:nth-child(2) {
+    margin: 0 15px;
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: 1px 1px var(--minor-color), 2px 2px black;
+}
+
+@media(orientation:landscape) {
+    .footer-down {
+        height: 55vh;
+    }
+    .footer-down__card {
+        position: absolute;
+        right: 0;
+        top: -20%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-down__slogan {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 70%;
+    }
+    /* .footer-down__span {
+        color: #fff;
+        font-family: var(--fonts);
+        font-weight: 200;
+        font-size: 3rem;
+        text-shadow: 1px 1px var(--minor-color), 2px 2px black;
+    } */
+    /* .footer-down__span:nth-child(2) {
+        margin: 0 15px;
+        font-size: 2rem;
+    } */
+}
+
+@media(min-width:1024px) {
+    .footer-down {
+        height: 40vh;
+    }
+    .footer-down__card {
+        right: 0;
+        width: 75%;
+    }
+    .footer-down__span {
+        color: #fff;
+        font-family: var(--fonts);
+        font-weight: 200;
+        font-size: 3rem;
+        text-shadow: 1px 1px var(--minor-color), 2px 2px black;
+    }
+    .footer-down__span:nth-child(2) {
+        margin: 0;
+        font-size: 4rem;
+        font-weight: 600;
+        text-shadow: 1px 1px var(--minor-color), 2px 2px black;
+    }
+}
