@@ -6,34 +6,37 @@ import './SloganCarousel.css';
 
 const sloganCarouselData = [
     {
-        id: 'one',
+        id: Math.random(),
         heading: 'Krok 1 - wybierz kurs',
         paragraph: 'Pomyśl czego potrzebujesz i wybierz kurs dla siebie. Mamy odpowiedź na wszystko. Bez ryzka! Pamiętaj, masz dwa tygodnie by zmienić swoją decyzję, a nawet zrezygnować.',
         btnText: 'Wybierz swój kurs',
         btn: 'sliding-carousel-banner__button',
         classHeading: 'sliding-carousel-banner__heading',
         classParagraph: 'sliding-carousel-banner__paragraph',
-        btnWrapper: 'sliding-carousel-banner__button-wrapper fff'
+        btnWrapper: 'sliding-carousel-banner__button-wrapper fff',
+        btnId: 'sliding-carousel-banner__button-one'
     },
     {
-        id: 'two',
+        id: Math.random(),
         heading: 'Krok 2 - wyślij formularz',
         paragraph: 'Wypełnij i wyślij formularz. Nie dokonuj żadnej wpłaty. Fakturę otrzymasz dopiero po zakwalifikowaniu do odpowiedniej grupy i dopasowaniu terminu zajęć.',
-        btnText: 'Wybierz swój kurs',
+        btnText: 'Sprawdź cennik',
         btn: 'sliding-carousel-banner__button',
         classHeading: 'sliding-carousel-banner__heading',
         classParagraph: 'sliding-carousel-banner__paragraph',
-        btnWrapper: 'sliding-carousel-banner__button-wrapper'
+        btnWrapper: 'sliding-carousel-banner__button-wrapper',
+        btnId: 'sliding-carousel-banner__button-two'
     },
     {
-        id: 'three',
+        id: Math.random(),
         heading: 'witaj na pokładzie',
         paragraph: 'To właściwie wszystko. Skontaktujemy się z Tobą w krócej niż jeden dzien roboczy. Zaczynamy!',
-        btnText: 'Wybierz swój kurs',
+        btnText: 'Zadaj pytanie',
         btn: 'sliding-carousel-banner__button',
         classHeading: 'sliding-carousel-banner__heading',
         classParagraph: 'sliding-carousel-banner__paragraph',
-        btnWrapper: 'sliding-carousel-banner__button-wrapper'
+        btnWrapper: 'sliding-carousel-banner__button-wrapper',
+        btnId: 'sliding-carousel-banner__button-three'
     }
 ]
 
@@ -50,6 +53,7 @@ const SloganCarousel = props => {
             classParagraph={slogan.classParagraph}
             btnWrapper={slogan.btnWrapper}
             arrowClassName='sliding-carousel-banner__button-arrow btn-arrow-right--active'
+            btnId={slogan.btnId}
         />
     ))
 

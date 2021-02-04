@@ -16,7 +16,8 @@ const contactList = [
         paragraph: 'Sprawdź godziny dostępności  naszych konsultantów',
         paragraphClass: 'footer-down__p',
         btnText: 'Dowiedz się więcej',
-        btnClass: 'footer-down__btn sliding-slogan-with-underline__btn sliding-slogan-with-underline__btn-left footer__btn'
+        btnClass: 'footer-down__btn sliding-slogan-with-underline__btn sliding-slogan-with-underline__btn-left footer__btn',
+        btnId: 'footer-down__btn-phone'
     },
     {
         id: uuidv4(),
@@ -27,7 +28,8 @@ const contactList = [
         paragraph: 'Skontaktujemy się z Tobą mailowo lub telefonicznie',
         paragraphClass: 'footer-down__p',
         btnText: 'Dowiedz się więcej',
-        btnClass: 'footer-down__btn sliding-slogan-with-underline__btn footer__btn'
+        btnClass: 'footer-down__btn sliding-slogan-with-underline__btn footer__btn',
+        btnId: 'footer-down__btn-email'
     }
 ];
 
@@ -45,6 +47,7 @@ const Down = () => {
             btnText={card.btnText}
             btnClass={card.btnClass}
             cardClass='footer-down__contact-card'
+            btnId={card.btnId}
         />
 
     ));

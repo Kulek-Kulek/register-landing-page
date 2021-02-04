@@ -7,6 +7,12 @@ import './Slogan.css';
 
 
 const Slogan = props => {
+
+    const moveToQaASectionHandler = () => {
+        const qa = document.querySelector('.faq');
+        qa.scrollIntoView({ behavior: 'smooth' });
+    }
+
     return (
         <div className='three-steps-slogans'>
             <div className='three-steps-slogans__slogans-div'>
@@ -17,8 +23,10 @@ const Slogan = props => {
                 <Button
                     btnText='Przetestuj'
                     class='sliding-slogan-with-underline__btn'
+                    click={moveToQaASectionHandler}
                 />
                 <Button
+                    id='three-steps-slogans-register-btn'
                     btnText='Zarejestruj się'
                     class='sliding-slogan-with-underline__btn sliding-slogan-with-underline__btn-left'
                 />

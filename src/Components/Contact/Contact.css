@@ -1,0 +1,16 @@
+.contact {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    transform: translateY(100vh);
+    z-index: 1000;
+    background: var(--bgc);
+    transition: .5s;
+}
+
+.contact--active {
+    transform: translateY(0);
+    transition: .5s;
+}

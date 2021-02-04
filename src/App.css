@@ -12,6 +12,7 @@
   --bgc: linear-gradient(45deg, #fafffa, #eff0f0);
 }
 
-.App {
-  font-family: var(--main-font);
-}
+/* .main {
+  position: relative;
+  overflow: hidden;
+} */

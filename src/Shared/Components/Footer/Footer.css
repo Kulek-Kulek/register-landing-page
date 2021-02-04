@@ -1,4 +1,5 @@
 .footer {
     margin-top: 10vh;
     padding-bottom: 3%;
+    overflow: hidden;
 }

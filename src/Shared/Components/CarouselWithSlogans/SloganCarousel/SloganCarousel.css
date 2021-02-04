@@ -16,7 +16,7 @@
     align-items: center;
     opacity: 0;
     padding: 0 2%;
-    font-family: var(--fonts);
+    font-family: var(--main-font);
     color: var(--main -color);
     animation: changeSloganSlide 18s linear infinite;
 }

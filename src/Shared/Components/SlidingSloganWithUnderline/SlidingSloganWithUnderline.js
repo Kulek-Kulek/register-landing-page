@@ -23,6 +23,11 @@ const SlidingSloganWithUnderline = props => {
         />
     ));
 
+    const moveToQaASectionHandler = () => {
+        const qa = document.querySelector('.faq');
+        qa.scrollIntoView({ behavior: 'smooth' });
+    }
+
     return (
         <div className='sliding-slogan-with-underline'>
             <div className='sliding-slogan-with-underline__heading-div'>
@@ -37,8 +42,10 @@ const SlidingSloganWithUnderline = props => {
                 <Button
                     btnText='Sprawdź cennik'
                     class='sliding-slogan-with-underline__btn sliding-slogan-with-underline__btn-left'
+                    click={moveToQaASectionHandler}
                 />
                 <Button
+                    id='sliding-slogan-with-underline__start-using'
                     btnText='Zacznij korzystać'
                     class='sliding-slogan-with-underline__btn sliding-slogan-with-underline__btn-right'
                 />

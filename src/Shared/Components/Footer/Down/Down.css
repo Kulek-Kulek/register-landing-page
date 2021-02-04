@@ -34,7 +34,7 @@
 
 .footer-down__span {
     color: #fff;
-    font-family: var(--fonts);
+    font-family: var(--main-font);
     font-weight: 200;
     font-size: 2rem;
     text-shadow: 1px 1px var(--minor-color), 2px 2px black;
@@ -60,23 +60,17 @@
         justify-content: space-between;
     }
     .footer-down__slogan {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-end;
-        height: 70%;
+        display: block;
+        padding: 0 1%;
+        /* height: 70%; */
     }
-    /* .footer-down__span {
-        color: #fff;
-        font-family: var(--fonts);
-        font-weight: 200;
-        font-size: 3rem;
-        text-shadow: 1px 1px var(--minor-color), 2px 2px black;
-    } */
-    /* .footer-down__span:nth-child(2) {
-        margin: 0 15px;
+    .footer-down__span {
+        font-size: 1.5rem;
+    }
+    .footer-down__span:nth-child(2) {
+        margin: 0 8px;
         font-size: 2rem;
-    } */
+    }
 }
 
 @media(min-width:1024px) {
@@ -89,13 +83,13 @@
     }
     .footer-down__span {
         color: #fff;
-        font-family: var(--fonts);
+        font-family: var(--main-font);
         font-weight: 200;
         font-size: 3rem;
         text-shadow: 1px 1px var(--minor-color), 2px 2px black;
     }
     .footer-down__span:nth-child(2) {
-        margin: 0;
+        margin: 15px;
         font-size: 4rem;
         font-weight: 600;
         text-shadow: 1px 1px var(--minor-color), 2px 2px black;

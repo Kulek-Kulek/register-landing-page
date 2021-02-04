@@ -6,9 +6,11 @@ import './SloganCarouselItem.css';
 
 const SloganCarouselItem = props => {
 
-    const chooseCourseButtonHandler = () => {
-        const courses = document.querySelector('.faq');
-        courses.scrollIntoView({ behavior: 'smooth' });
+    const moveToQaASectionHandler = (e) => {
+        const qa = document.querySelector('.faq');
+        if (e.target.id === 'sliding-carousel-banner__button-two') {
+            qa.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 
     return (
@@ -17,9 +19,10 @@ const SloganCarouselItem = props => {
             <p className={props.classParagraph}>{props.paragraph}</p>
             <div className={props.btnWrapper}>
                 <Button
+                    id={props.btnId}
                     class='sliding-slogan-with-underline__btn'
                     btnText={props.btnText}
-                    click={chooseCourseButtonHandler}
+                    click={moveToQaASectionHandler}
                 />
             </div>
         </div>

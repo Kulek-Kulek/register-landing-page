@@ -15,7 +15,7 @@
 
 .three-steps-slogan__main-slogan {
     font-size: 1.8rem;
-    font-family: var(--fonts);
+    font-family: var(--main-font);
     color: #4E6077;
     letter-spacing: 2px;
     text-align: center;
@@ -23,7 +23,7 @@
 
 .three-steps-slogan__minor-slogan {
     text-align: center;
-    font-family: var(--fonts);
+    font-family: var(--main-font);
     font-size: 1rem;
     letter-spacing: 1px;
     padding: 3% 0;

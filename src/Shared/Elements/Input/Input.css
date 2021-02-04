@@ -1,6 +1,6 @@
 .contact-form__input-div {
     margin-bottom: 2%;
-    width: 50%;
+    width: 85%;
 }
 
 .conatct-form__input, .conatct-form__textarea {
@@ -15,11 +15,17 @@
 }
 
 .contact-form__input-error {
-    border: 1px solid red;
+    border-bottom: 2px solid rgb(235, 84, 84);
 }
 
 .contact-form__message-error {
-    color: red;
+    color: rgb(235, 84, 84);
     font-size: .8rem;
     margin: 5px 0 0 5px;
+}
+
+@media(orientation:landscape) {
+    .contact-form__input-div {
+        width: 75%;
+    }
 }

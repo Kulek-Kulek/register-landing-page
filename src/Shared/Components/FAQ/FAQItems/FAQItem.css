@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(90deg, #E6E7E8, #bec5c5);
-    color: #fff;
+    /* color: #fff; */
     padding: 1% 2%;
     border-left: 15px solid var(--minor-color);
     transition: .5s;
