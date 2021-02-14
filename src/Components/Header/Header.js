@@ -4,23 +4,29 @@ import { v4 as uuidv4 } from 'uuid';
 import SlidingSloganWithUnderline from '../../Shared/Components/SlidingSloganWithUnderline/SlidingSloganWithUnderline';
 import Navigation from '../../Shared/Components/Navigation/NavHamburger';
 import AsideMenu from '../../Shared/Components/AsideMenu/AsideMenu';
+// import MessageSent from '../MessageSent';
 
 import './Header.css';
 
 const slogans = [
     {
         id: uuidv4(),
-        slogan: 'Cześć Anetka',
+        slogan: 'kursami i kadrą',
         class: 'sliding-slogan-with-underline__slogan-span sliding-slogan-with-underline__sliding-span sliding-slogan-with-underline__sliding-span--active'
     },
     {
         id: uuidv4(),
-        slogan: 'slogan druuugi',
+        slogan: 'płatnościami',
         class: 'sliding-slogan-with-underline__slogan-span sliding-slogan-with-underline__sliding-span'
     },
     {
         id: uuidv4(),
-        slogan: 'slogan trzeeeeci',
+        slogan: 'przepływem informacji',
+        class: 'sliding-slogan-with-underline__slogan-span sliding-slogan-with-underline__sliding-span'
+    },
+    {
+        id: uuidv4(),
+        slogan: 'dokumentacją',
         class: 'sliding-slogan-with-underline__slogan-span sliding-slogan-with-underline__sliding-span'
     }
 ];
@@ -29,31 +35,31 @@ const slogans = [
 const menuItems = [
     {
         id: uuidv4(),
-        linkName: 'Oferta',
+        linkName: 'korzyści',
         iconClass: 'fa fa-handshake aside-menu__i',
         aClass: 'aside-menu__a',
-        sectionName: 'one'
+        sectionId: 'benefits'
     },
     {
         id: uuidv4(),
-        linkName: 'O firmie',
+        linkName: 'zamów',
         iconClass: 'fab fa-affiliatetheme aside-menu__i',
         aClass: 'aside-menu__a',
-        sectionName: 'two'
+        sectionId: 'order'
     },
     {
         id: uuidv4(),
-        linkName: 'Promocje',
+        linkName: 'pytania',
         iconClass: 'fab fa-buffer aside-menu__i',
         aClass: 'aside-menu__a',
-        sectionName: 'three'
+        sectionId: 'questions'
     },
     {
         id: uuidv4(),
-        linkName: 'Promocje',
+        linkName: 'kontakt',
         iconClass: 'fa fa-pencil-alt aside-menu__i',
         aClass: 'aside-menu__a',
-        sectionName: 'four'
+        sectionId: 'contact'
     }
 ];
 
@@ -63,6 +69,7 @@ const Header = props => {
             <AsideMenu menuItems={menuItems} />
             <SlidingSloganWithUnderline slogans={slogans} />
             <Navigation />
+            {/* <MessageSent /> */}
         </header>
     );
 }

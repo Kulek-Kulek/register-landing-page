@@ -7,8 +7,8 @@ import './SloganCarousel.css';
 const sloganCarouselData = [
     {
         id: Math.random(),
-        heading: 'Krok 1 - wybierz kurs',
-        paragraph: 'Pomyśl czego potrzebujesz i wybierz kurs dla siebie. Mamy odpowiedź na wszystko. Bez ryzka! Pamiętaj, masz dwa tygodnie by zmienić swoją decyzję, a nawet zrezygnować.',
+        heading: 'Zarządzaj kursami',
+        paragraph: 'Twórz kartoteki poszczególnych lektorów, Klientów oraz całych grup. Zarządzaj danymi uczniów, monitoruj realizację kursów oraz pracę Twojego zespołu. Zarządzaj przepływem informacji.',
         btnText: 'Wybierz swój kurs',
         btn: 'sliding-carousel-banner__button',
         classHeading: 'sliding-carousel-banner__heading',
@@ -18,27 +18,27 @@ const sloganCarouselData = [
     },
     {
         id: Math.random(),
-        heading: 'Krok 2 - wyślij formularz',
-        paragraph: 'Wypełnij i wyślij formularz. Nie dokonuj żadnej wpłaty. Fakturę otrzymasz dopiero po zakwalifikowaniu do odpowiedniej grupy i dopasowaniu terminu zajęć.',
-        btnText: 'Sprawdź cennik',
-        btn: 'sliding-carousel-banner__button',
-        classHeading: 'sliding-carousel-banner__heading',
-        classParagraph: 'sliding-carousel-banner__paragraph',
-        btnWrapper: 'sliding-carousel-banner__button-wrapper',
-        btnId: 'sliding-carousel-banner__button-two'
-    },
-    {
-        id: Math.random(),
         heading: 'witaj na pokładzie',
-        paragraph: 'To właściwie wszystko. Skontaktujemy się z Tobą w krócej niż jeden dzien roboczy. Zaczynamy!',
+        paragraph: 'Przyjmuj płatności online. Twórz spersonalizowane harmonogramy płatności ratalnych. Twórz dokumentację online - faktury i raporty. Wystawiaj certyfikaty online.',
         btnText: 'Zadaj pytanie',
         btn: 'sliding-carousel-banner__button',
         classHeading: 'sliding-carousel-banner__heading',
         classParagraph: 'sliding-carousel-banner__paragraph',
         btnWrapper: 'sliding-carousel-banner__button-wrapper',
         btnId: 'sliding-carousel-banner__button-three'
+    },
+    {
+        id: Math.random(),
+        heading: 'Prowadź aktywny marketing',
+        paragraph: 'Prowadź kampanie mailowe adresowane do Twoich Klientów. Kontaktuj się z Klientem wieloma kanałami - SMS, Messinger, WhatsApp. Sprzedawaj w internecie.',
+        btnText: 'Zapytaj o cennę',
+        btn: 'sliding-carousel-banner__button',
+        classHeading: 'sliding-carousel-banner__heading',
+        classParagraph: 'sliding-carousel-banner__paragraph',
+        btnWrapper: 'sliding-carousel-banner__button-wrapper',
+        btnId: 'sliding-carousel-banner__button-two'
     }
-]
+];
 
 const SloganCarousel = props => {
 

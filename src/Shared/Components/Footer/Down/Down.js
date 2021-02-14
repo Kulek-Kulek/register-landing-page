@@ -9,11 +9,11 @@ import './Down.css';
 const contactList = [
     {
         id: uuidv4(),
-        heading: 'Zadzwoń teraz',
+        heading: 'Tel: 500 097 398',
         headingClass: 'footer-down__heading',
         iconClass: 'fas fa-phone-volume footer-down__i',
         aClass: 'footer-down__a',
-        paragraph: 'Sprawdź godziny dostępności  naszych konsultantów',
+        paragraph: 'Od poniedziałku do piątku w godzinach od 8.00 do 20.00',
         paragraphClass: 'footer-down__p',
         btnText: 'Dowiedz się więcej',
         btnClass: 'footer-down__btn sliding-slogan-with-underline__btn sliding-slogan-with-underline__btn-left footer__btn',
@@ -61,9 +61,9 @@ const Down = () => {
             </div>
             <div className='footer-down__media'>
                 <h2 className='footer-down__slogan'>
-                    <span className='footer-down__span'>Duis</span>
-                    <span className='footer-down__span'>cupidatat</span>
-                    <span className='footer-down__span'>voluptate.</span>
+                    <span className='footer-down__span'>okay</span>
+                    <span className='footer-down__span'>Projects</span>
+                    {/* <span className='footer-down__span'>się.</span> */}
                 </h2>
             </div>
         </div>

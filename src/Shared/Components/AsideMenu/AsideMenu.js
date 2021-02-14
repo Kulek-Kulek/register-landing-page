@@ -1,5 +1,5 @@
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
+
 
 import MenuItem from './MenuItem';
 
@@ -17,7 +17,7 @@ const AsideMenu = props => {
             linkClass='aside-menu__item'
             aClass={link.aClass}
             id={link.id}
-            sectionName={link.sectionName}
+            sectionId={link.sectionId}
         />
     ))
 

@@ -1,5 +1,5 @@
 .three-steps {
-    margin-top: 15vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     background-color: #F8F9FA;
@@ -7,6 +7,7 @@
 
 @media(orientation:landscape) {
     .three-steps {
+        margin-top: 15vh;
         flex-direction: row;
     }
 }

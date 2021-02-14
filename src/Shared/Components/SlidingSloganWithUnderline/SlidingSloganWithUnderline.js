@@ -32,15 +32,15 @@ const SlidingSloganWithUnderline = props => {
         <div className='sliding-slogan-with-underline'>
             <div className='sliding-slogan-with-underline__heading-div'>
                 <h1 className='sliding-slogan-with-underline__heading'>
-                    <span className='sliding-slogan-with-underline__slogan-span'>send</span>
+                    <span className='sliding-slogan-with-underline__slogan-span'>Zarządzaj</span>
                     {slidinSlogans}
-                    <span className='sliding-slogan-with-underline__slogan-span'>with confidence</span>
+                    <span className='sliding-slogan-with-underline__slogan-span'>profesjonalnie</span>
                 </h1>
             </div>
-            <h3 className='sliding-slogan-with-underline__minor-heading'>Labore cupidatat consectetur proident quis elit velit officia mollit exercitation. Nulla adipisicing.</h3>
+            <h3 className='sliding-slogan-with-underline__minor-heading'>Uniwersalny i elastyczny system wspomagający zarządzanie niepubliczną placówką oświatową</h3>
             <div className='sliding-slogan-with-underline__btn-div'>
                 <Button
-                    btnText='Sprawdź cennik'
+                    btnText='Zapytaj o cenę'
                     class='sliding-slogan-with-underline__btn sliding-slogan-with-underline__btn-left'
                     click={moveToQaASectionHandler}
                 />

@@ -1,5 +1,5 @@
 .three-steps-steps {
-    flex-basis: 55%;
+    flex-basis: 65%;
     display: flex;
 }
 
@@ -9,27 +9,18 @@
 
 .three-steps-steps__next {
     font-size: 2rem;
-    /* color: #4E6077; */
-    color: #000;
+    color: #4E6077;
     font-weight: 100;
-    transform: translateY(22.5%);
-}
-
-@media(orientation:landscape) {
-    .three-steps-steps {
-        padding: 0 0% 0 5%;
-    }
-    .three-steps-steps__next {
-        transform: translateY(20%);
-    }
+    transform: translateY(15%);
 }
 
 @media(min-width:1024px) {
     .three-steps-steps {
-        padding: 0 2% 0 10%;
+        flex-basis: 55%;
+        padding: 0 2% 2% 10%;
     }
     .three-steps-steps__next {
         font-size: 3rem;
-        transform: translateY(22.5%);
+        /* transform: translateY(22.5%); */
     }
 }

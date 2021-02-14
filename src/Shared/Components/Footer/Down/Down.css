@@ -40,12 +40,12 @@
     text-shadow: 1px 1px var(--minor-color), 2px 2px black;
 }
 
-.footer-down__span:nth-child(2) {
+/* .footer-down__span:nth-child(2) {
     margin: 0 15px;
     font-size: 3rem;
     font-weight: 600;
     text-shadow: 1px 1px var(--minor-color), 2px 2px black;
-}
+} */
 
 @media(orientation:landscape) {
     .footer-down {
@@ -65,11 +65,11 @@
         /* height: 70%; */
     }
     .footer-down__span {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .footer-down__span:nth-child(2) {
-        margin: 0 8px;
-        font-size: 2rem;
+        /* margin: 0 8px; */
+        font-size: 2.5rem;
     }
 }
 
@@ -89,7 +89,7 @@
         text-shadow: 1px 1px var(--minor-color), 2px 2px black;
     }
     .footer-down__span:nth-child(2) {
-        margin: 15px;
+        /* margin: 15px; */
         font-size: 4rem;
         font-weight: 600;
         text-shadow: 1px 1px var(--minor-color), 2px 2px black;

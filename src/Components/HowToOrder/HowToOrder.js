@@ -7,7 +7,11 @@ import './HowToOrder.css';
 
 const HowToOrder = props => {
     return (
-        <Section classSection='how-to-order'>
+        <Section
+            sectionId='order'
+            classSection='how-to-order'
+            sectionMainHeading='Trzy kroki do sukcesu'
+        >
             <OneTwoThree />
         </Section>
     );

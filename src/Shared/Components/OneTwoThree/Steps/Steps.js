@@ -11,7 +11,7 @@ const stepList = [
         number: 1,
         stepClass: 'three-steps-steps__item',
         stepNumberClass: 'three-steps-steps__number',
-        stepDesc: 'Incididunt do laboris',
+        stepDesc: 'Wypełnij formularz i zamów bezpłatną prezentację. Tak zupełnie bez zobowiązań.',
         stepDescClass: 'three-steps-steps__p'
     },
     {
@@ -19,7 +19,7 @@ const stepList = [
         number: 2,
         stepClass: 'three-steps-steps__item',
         stepNumberClass: 'three-steps-steps__number',
-        stepDesc: 'Id incididunt nisi anim esse eiusmod ex amet except',
+        stepDesc: 'Skontaktujemy się z Tobą w mniej niż 24 godziny. Ustalimy harmonogram wdrożenia, przeszkolimy kadrę jeśli będzie taka potrzeba.',
         stepDescClass: 'three-steps-steps__p'
     },
     {
@@ -27,7 +27,7 @@ const stepList = [
         number: 3,
         stepClass: 'three-steps-steps__item',
         stepNumberClass: 'three-steps-steps__number',
-        stepDesc: 'Minim nulla quis ullamco fugiat commodo esse',
+        stepDesc: 'Właściwie to już wszystko. Teraz możesz skupić się na swoim biznesie. Pamiętaj, zawsze możesz wypróbować produkt przed podpisaniem umowy. Za darmo i bez zobowiązań.',
         stepDescClass: 'three-steps-steps__p'
     }
 ]

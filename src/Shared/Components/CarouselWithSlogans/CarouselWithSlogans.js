@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import SloganCarousel from './SloganCarousel/SloganCarousel';
 import ImageCarousel from './ImageCarousel/ImageCarousel';
 import img1 from '../../../Assetss/Images/pic1.jpg';
-import img2 from '../../../Assetss/Images/IMG_2942_800x533.jpg';
+import img2 from '../../../Assetss/Images/pic2.jpg';
 import img3 from '../../../Assetss/Images/pic3.jpg';
 import { changeSlides } from './carouselWithSlogansScripts';
 import './CarouselWithSlogans.css';
@@ -20,8 +20,8 @@ const sliderData = [
         innerDivClass: 'sliding-carousel-banner__innerDiv',
         innerHeadingClass: 'sliding-carousel-banner__innerHeading',
         innerSpanClass: 'sliding-carousel-banner__innerSpan',
-        innerHeadingText: 'Krok 1',
-        innerSpanText: 'Wybierz swój kurs.'
+        innerHeadingText: 'Zarządzaj kursami',
+        innerSpanText: 'Zautomatyzowane zarządzanie bazą danych Klientów i pracowników online.'
     },
     {
         src: img2,
@@ -31,8 +31,8 @@ const sliderData = [
         innerDivClass: 'sliding-carousel-banner__innerDiv',
         innerHeadingClass: 'sliding-carousel-banner__innerHeading',
         innerSpanClass: 'sliding-carousel-banner__innerSpan',
-        innerHeadingText: 'Krok 2',
-        innerSpanText: 'Wypełnij i wyślij formularz. Nie dokonuj żadnej wpłaty.'
+        innerHeadingText: 'Zarządzaj płatnościami',
+        innerSpanText: 'Zautomatyzowane zarządzanie finansami i dokumentami finansowymi.'
     },
     {
         src: img3,
@@ -42,8 +42,8 @@ const sliderData = [
         innerDivClass: 'sliding-carousel-banner__innerDiv',
         innerHeadingClass: 'sliding-carousel-banner__innerHeading',
         innerSpanClass: 'sliding-carousel-banner__innerSpan',
-        innerHeadingText: 'Krok 3',
-        innerSpanText: 'Poczekaj na potwierdzenie terminów zajęć. To zajmie nam dosłownie chwilkę.'
+        innerHeadingText: 'Prowadź aktywny marketing',
+        innerSpanText: 'Zautomatyzowane zarządzanie przepływem informacji poprzez nowoczesne kanały online.'
     }
 ];
 

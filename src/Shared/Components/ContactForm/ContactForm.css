@@ -1,21 +1,35 @@
 .conatct-form {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+}
+
+.conatct-form__aside {
+    flex-basis: 20%;
+    margin-left: 2%;
+    height: 90%;
+    background-image: url('../../../Assetss/Images/IMG_2942_800x533.jpg');
+    background-position-x: center;
+    background-position-y: -30px;
+    background-size: cover;
+    filter: grayscale();
+    background-repeat: no-repeat;
+}
+
+.conatct-form__inputs-div {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: 5% 0;
-    /* background-image: url('../../../Assetss/Images/IMG_2942_800x533.jpg'); */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .contact-form__btn-div {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 95%;
 }
 
 .contact-form__btn {
@@ -37,9 +51,26 @@
     padding: 3% 0;
 }
 
+.contact-form__btn:disabled {
+    width: 20%;
+    color: grey;
+    border-color: grey;
+}
+
+.contact-form__btn:disabled:hover {
+    background-color: #fff;
+    cursor: auto;
+}
+
 @media(orientation:landscape) {
     .conatct-form {
+        flex-direction: row;
         padding-top: 5%;
+    }
+    .conatct-form__aside {
+        background-image: url('../../../Assetss/Images/Nowy folder/IMG_2245_1_400x600.jpg');
+        background-position-x: -40px;
+        background-position-y: center;
     }
     .contact-form__btn-div {
         width: 70%;
@@ -51,7 +82,7 @@
 
 @media(min-width:1024px) {
     .conatct-form {
-        padding-top: 5%;
+        padding-top: 3%;
     }
     .contact-form__btn-div {
         width: 70%;

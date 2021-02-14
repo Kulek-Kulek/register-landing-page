@@ -4,7 +4,6 @@ import Header from './Components/Header/Header';
 import Benefits from './Components/Benefits/Benefits';
 import HowToOrder from './Components/HowToOrder/HowToOrder';
 import QA from './Components/QA/QA';
-import Contact from './Components/Contact/Contact';
 import Footer from './Shared/Components/Footer/Footer';
 
 import './App.css';
@@ -17,9 +16,8 @@ function App() {
         <Benefits />
         <HowToOrder />
         <QA />
-        {/* <Contact /> */}
       </main>
-      <footer>
+      <footer id='sectioncontact'>
         <Footer />
       </footer>
     </React.Fragment>

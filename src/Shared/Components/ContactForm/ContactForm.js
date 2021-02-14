@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 
 import Button from '../../Elements/Button/Button';
-
+import Spinner from '../../Components/Spinner/Spinner';
 import Input from '../../Elements/Input/Input';
+import InfoModal from '../InfoModal/InfoModal';
 
 
 import './ContactForm.css';
@@ -16,7 +17,7 @@ const inputList = [
         name: 'name',
         type: 'text',
         input: 'input',
-        placeholder: 'Wpisz swoje imię',
+        placeholder: '* Wpisz swoje imię',
         classInput: 'conatct-form__input',
         classLabel: 'conatct-form__label',
         label: '',
@@ -39,7 +40,7 @@ const inputList = [
         name: 'email',
         type: 'email',
         input: 'input',
-        placeholder: 'Wpisz swój email',
+        placeholder: '* Wpisz swój email',
         classInput: 'conatct-form__input',
         classLabel: 'conatct-form__label',
         label: '',
@@ -51,7 +52,7 @@ const inputList = [
         name: 'mobile',
         type: 'number',
         input: 'input',
-        placeholder: 'Telefon kontaktowy',
+        placeholder: '* Telefon kontaktowy',
         classInput: 'conatct-form__input',
         classLabel: 'conatct-form__label',
         label: '',
@@ -73,6 +74,27 @@ const inputList = [
 
 const ContactForm = props => {
 
+    const [messageSent, setMessageSent] = useState(false);
+
+    const [submitError, setSubmitError] = useState(false);
+
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        if (messageSent) {
+            const contacForm = document.querySelector('.contact');
+            const messageSent = document.querySelector('.message-sent');
+            contacForm.classList.remove('contact--active');
+            setTimeout(() => {
+                messageSent.classList.add('message-sent--active');
+            }, 200);
+            setMessageSent(false);
+        }
+    }, [messageSent]);
+
+
+
+
     const validationSchema = () => yup.object().shape({
         email: yup
             .string()
@@ -87,8 +109,9 @@ const ContactForm = props => {
             .min(3, 'Nazwisko musi mieć co najmniej trzy znaki.'),
         mobile: yup
             .string()
-            .min(6, 'Numer telefonu musi mieć 6 cyfr.')
-            .max(6, 'Numer telefonu musi mieć 6 cyfr.'),
+            .required('Podaj swój telefon.')
+            .min(6, 'Numer telefonu musi mieć 6 cyfr.'),
+        // .max(6, 'Numer telefonu musi mieć 6 cyfr.'),
         textarea: yup
             .string().min(3, 'Wpisz co najmniej 3 znaki.')
     });
@@ -102,10 +125,49 @@ const ContactForm = props => {
             textarea: ''
         },
         validationSchema,
-        onSubmit: values => {
-            console.log(values);
-        }
+        // onSubmit: async values => {
+
+        // }
     });
+
+    const sendRequestHandler = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        try {
+            const response = await fetch('http://localhost:5000/api/contact/maria-lp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: formik.values.email,
+                    name: formik.values.name,
+                    surname: formik.values.surname,
+                    comment: formik.values.textarea,
+                    mobile: formik.values.mobile
+                })
+            });
+            const responseData = await response.json();
+
+            responseData.message === 'Wiadomość wysłana' && setMessageSent(true);
+            responseData.message === 'Wiadomość wysłana' && setLoading(false);
+        }
+        catch (err) {
+            setSubmitError(true);
+            setLoading(false);
+        }
+    }
+
+    const errorModalHideHandler = () => {
+        setSubmitError(false);
+    }
+
+    const cancelSendFormHandler = (e) => {
+        e.preventDefault();
+        const contacForm = document.querySelector('.contact');
+        contacForm.classList.remove('contact--active');
+        setMessageSent(false);
+    }
 
     const inputs = inputList.map(input => (
         <Input
@@ -130,21 +192,41 @@ const ContactForm = props => {
 
 
     return (
-        <form className='conatct-form' onSubmit={formik.handleSubmit}>
-            {inputs}
-            <div className='contact-form__btn-div'>
-                <Button
-                    btnText='Anuluj'
-                    id='contact-form-cancel-btn'
-                    class='sliding-slogan-with-underline__btn contact-form__btn btn-danger conatct-form__btn'
-                />
-                <Button
-                    btnText='Wyślij'
-                    type='submit'
-                    class='sliding-slogan-with-underline__btn contact-form__btn conatct-form__btn'
-                />
-            </div>
-        </form>
+        <form className='conatct-form' >
+            {loading ? <Spinner /> :
+                <React.Fragment>
+                    <aside className='conatct-form__aside'></aside>
+                    <div className='conatct-form__inputs-div'>
+                        {inputs}
+                        < div className='contact-form__btn-div'>
+                            <Button
+                                btnText='Anuluj'
+                                type='text'
+                                id='contact-form-cancel-btn'
+                                class='sliding-slogan-with-underline__btn contact-form__btn btn-danger conatct-form__btn'
+                                click={cancelSendFormHandler}
+                            />
+                            <Button
+                                btnText='Wyślij'
+                                type='submit'
+                                class='sliding-slogan-with-underline__btn contact-form__btn conatct-form__btn'
+                                disabled={formik.errors.name || formik.errors.email || formik.errors.mobile || formik.values.name.length === 0 || formik.values.email.length === 0 || formik.values.mobile === 0}
+                                click={sendRequestHandler}
+                            />
+                        </div>
+                    </div>
+
+                    {
+                        submitError && <InfoModal
+                            class='message-sent--active'
+                            messageHeading='Uppps - coś poszło nie tak.'
+                            mainMessage='Spróbuj za chwilę.'
+                            errorModalHide={errorModalHideHandler}
+                        />
+                    }
+                </React.Fragment>
+            }
+        </form >
     );
 }
 

@@ -9,6 +9,7 @@ import './QA.css';
 const QA = props => {
     return (
         <Section
+            sectionId='questions'
             classSection='qa'
             sectionMainHeading='Mamy odpowiedź na wszystko'
         >

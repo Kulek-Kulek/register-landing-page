@@ -68,8 +68,8 @@
 
 @media(min-width:1024px) {
     .menu-item-back {
-        width: 70%;
-        border-bottom: 1px solid black;
+        width: 80%;
+        /* border-bottom: 1px solid black; */
         /* border-top: 1px solid black; */
     }
     .menu-item-back:hover {
