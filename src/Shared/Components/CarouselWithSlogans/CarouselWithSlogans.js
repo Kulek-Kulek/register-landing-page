@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 
 import SloganCarousel from './SloganCarousel/SloganCarousel';
 import ImageCarousel from './ImageCarousel/ImageCarousel';
-import img1 from '../../../Assetss/Images/pic1.jpg';
-import img2 from '../../../Assetss/Images/pic2.jpg';
-import img3 from '../../../Assetss/Images/pic3.jpg';
+import img1 from '../../../Assetss/Images/istockphoto-1220060438-170667a_800x533.jpg';
+import img2 from '../../../Assetss/Images/money.jpg';
+import img3 from '../../../Assetss/Images/marketing.jpg';
 import { changeSlides } from './carouselWithSlogansScripts';
 import './CarouselWithSlogans.css';
 
@@ -20,7 +20,7 @@ const sliderData = [
         innerDivClass: 'sliding-carousel-banner__innerDiv',
         innerHeadingClass: 'sliding-carousel-banner__innerHeading',
         innerSpanClass: 'sliding-carousel-banner__innerSpan',
-        innerHeadingText: 'Zarządzaj kursami',
+        innerHeadingText: 'Zarządzaj kursami i kadrą',
         innerSpanText: 'Zautomatyzowane zarządzanie bazą danych Klientów i pracowników online.'
     },
     {
@@ -31,7 +31,7 @@ const sliderData = [
         innerDivClass: 'sliding-carousel-banner__innerDiv',
         innerHeadingClass: 'sliding-carousel-banner__innerHeading',
         innerSpanClass: 'sliding-carousel-banner__innerSpan',
-        innerHeadingText: 'Zarządzaj płatnościami',
+        innerHeadingText: 'Zarządzaj płatnościami online',
         innerSpanText: 'Zautomatyzowane zarządzanie finansami i dokumentami finansowymi.'
     },
     {
@@ -49,7 +49,7 @@ const sliderData = [
 
 const CarouselWithSlogans = props => {
     useEffect(() => {
-        const interval = setInterval(changeSlides, 6000)
+        const interval = setInterval(changeSlides, 7500)
         return () => clearInterval(interval);
     }, []);
 

@@ -7,9 +7,9 @@ import './SloganCarousel.css';
 const sloganCarouselData = [
     {
         id: Math.random(),
-        heading: 'Zarządzaj kursami',
+        heading: 'Zarządzaj kursami i kadrą',
         paragraph: 'Twórz kartoteki poszczególnych lektorów, Klientów oraz całych grup. Zarządzaj danymi uczniów, monitoruj realizację kursów oraz pracę Twojego zespołu. Zarządzaj przepływem informacji.',
-        btnText: 'Wybierz swój kurs',
+        btnText: 'Dowiedz się więcej',
         btn: 'sliding-carousel-banner__button',
         classHeading: 'sliding-carousel-banner__heading',
         classParagraph: 'sliding-carousel-banner__paragraph',
@@ -18,7 +18,7 @@ const sloganCarouselData = [
     },
     {
         id: Math.random(),
-        heading: 'witaj na pokładzie',
+        heading: 'zarządzaj płatnościami online',
         paragraph: 'Przyjmuj płatności online. Twórz spersonalizowane harmonogramy płatności ratalnych. Twórz dokumentację online - faktury i raporty. Wystawiaj certyfikaty online.',
         btnText: 'Zadaj pytanie',
         btn: 'sliding-carousel-banner__button',

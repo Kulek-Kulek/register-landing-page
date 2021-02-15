@@ -1,10 +1,13 @@
 .main-featuers {
     width: 80%;
-    margin: 10vh auto;
+    margin: 5vh auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* align-items: stretch; */
+}
+
+.main-featuers:nth-of-type(2) {
+    margin: 0 auto;
 }
 
 @media(orientation:landscape) {
@@ -13,11 +16,18 @@
         margin: 10vh auto 10vh auto;
         flex-direction: row;
     }
+    .main-featuers:nth-of-type(2) {
+        margin: 25vh auto 10vh auto;
+    }
 }
 
 @media(min-width: 1024px) {
     .main-featuers {
         width: 85%;
-        margin: 25vh auto 15vh auto;
+        margin: 0vh auto 15vh auto;
+    }
+    .main-featuers:nth-of-type(2) {
+        width: 85%;
+        margin: 20vh auto;
     }
 }
