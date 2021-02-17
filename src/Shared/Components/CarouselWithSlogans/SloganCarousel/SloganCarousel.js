@@ -30,8 +30,8 @@ const sloganCarouselData = [
     {
         id: Math.random(),
         heading: 'Prowadź aktywny marketing',
-        paragraph: 'Prowadź kampanie mailowe adresowane do Twoich Klientów. Kontaktuj się z Klientem wieloma kanałami - SMS, Messinger, WhatsApp. Sprzedawaj w internecie.',
-        btnText: 'Zapytaj o cennę',
+        paragraph: 'Prowadź kampanie mailowe adresowane do Twoich Klientów. Kontaktuj się z Klientem wieloma kanałami - SMS, Messenger, WhatsApp. Sprzedawaj w internecie.',
+        btnText: 'Zapytaj o cenę',
         btn: 'sliding-carousel-banner__button',
         classHeading: 'sliding-carousel-banner__heading',
         classParagraph: 'sliding-carousel-banner__paragraph',

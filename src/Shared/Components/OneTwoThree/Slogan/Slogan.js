@@ -16,7 +16,7 @@ const Slogan = props => {
     return (
         <div className='three-steps-slogans'>
             <div className='three-steps-slogans__slogans-div'>
-                <h2 className='three-steps-slogan__main-slogan'>Sprawdź jakie to proste</h2>
+                <h2 className='three-steps-slogan__main-slogan'>Sprawdź, jakie to proste</h2>
                 <h6 className='three-steps-slogan__minor-slogan'>Wypróbuj za darmo</h6>
             </div>
             <div className='three-steps-slogan__buttons'>

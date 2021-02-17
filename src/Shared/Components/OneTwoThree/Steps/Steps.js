@@ -19,7 +19,7 @@ const stepList = [
         number: 2,
         stepClass: 'three-steps-steps__item',
         stepNumberClass: 'three-steps-steps__number',
-        stepDesc: 'Skontaktujemy się z Tobą w mniej niż 24 godziny. Ustalimy harmonogram wdrożenia, przeszkolimy kadrę jeśli będzie taka potrzeba.',
+        stepDesc: 'Skontaktujemy się z Tobą w mniej niż 24 godziny. Ustalimy harmonogram wdrożenia, przeszkolimy kadrę, jeśli będzie taka potrzeba.',
         stepDescClass: 'three-steps-steps__p'
     },
     {

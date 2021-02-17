@@ -7,12 +7,12 @@
     transform: translateY(100vh);
     z-index: 1000;
     background: #fff;
-    transition: .5s;
+    transition: .3s;
 }
 
 .message-sent--active {
     transform: translateY(0);
-    transform: .5s;
+    transform: .3s;
 }
 
 .message-sent__heading {

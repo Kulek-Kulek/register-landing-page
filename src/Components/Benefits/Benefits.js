@@ -50,7 +50,7 @@ const mainFeatuersListBottom = [
         headingClass: 'main-features__heading',
         iconClass: 'fa fa-handshake main-features__i',
         aClass: 'aside-menu__a',
-        paragraph: 'Pozwala komunikować się z Klientem poprzez zautomatyzowany e-mailing, wiadomości SMS oraz komunikatory Messinger i WhatsApp.',
+        paragraph: 'Pozwala komunikować się z Klientem poprzez zautomatyzowany e-mailing, wiadomości SMS oraz komunikatory Messenger i WhatsApp.',
         paragraphClass: 'main-features__p',
         btnText: 'Dowiedz się więcej',
         btnClass: 'main-features__btn sliding-slogan-with-underline__btn'

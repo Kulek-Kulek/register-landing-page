@@ -134,7 +134,7 @@ const ContactForm = props => {
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await fetch('http://localhost:5000/api/contact/maria-lp', {
+            const response = await fetch('https://maria-register.herokuapp.com/api/contact/maria-lp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
